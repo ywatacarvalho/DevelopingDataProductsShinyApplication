@@ -47,19 +47,19 @@ shinyServer(
                 
                 betas0_simul[i] <- as.numeric(coef[1]);
                 betas1_simul[i] <- as.numeric(coef[2]);
-                
-                par(mfrow = c(1,2));
-                par(mar = c(4,4,4,2));
-                
-                hist(betas0_simul, main = "Histogram for Linear Coefficient \nEstimates", col = 'white', xlab = "Linear coef. estimates");     
-                lines(c(beta0(),beta0()), c(0,200), col = "red", lwd = 5);
-                
-                hist(betas1_simul, main = "Histogram for Angular Coefficient \nEstimates", col = 'white', xlab = "Angular coef. estimates");    
-                lines(c(beta1(),beta1()), c(0,200), col = "red", lwd = 5);        
-                
-                #                 beta0_mean <- mean(betas0_simul);
-                #                 beta1_mean <- mean(betas1_simul);
             }
+                
+            par(mfrow = c(1,2));
+            par(mar = c(4,4,4,2));
+            
+            hist(betas0_simul, main = "Histogram for Linear Coefficient \nEstimates", col = 'white', xlab = "Linear coef. estimates");     
+            lines(c(beta0(),beta0()), c(0,200), col = "red", lwd = 5);
+            
+            hist(betas1_simul, main = "Histogram for Angular Coefficient \nEstimates", col = 'white', xlab = "Angular coef. estimates");    
+            lines(c(beta1(),beta1()), c(0,200), col = "red", lwd = 5);        
+            
+            #                 beta0_mean <- mean(betas0_simul);
+            #                 beta1_mean <- mean(betas1_simul);
         })
     }
 )
