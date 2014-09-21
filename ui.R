@@ -5,7 +5,7 @@ shinyUI(pageWithSidebar(
   sidebarPanel(
     h5('Introduction'),    
       
-    p("This is a simple application to demonstrate how to demonstrate the behavior of the ordinary least squares (OLS) estimator, under different samples.
+    p("This is a simple application to demonstrate the behavior of the ordinary least squares (OLS) estimator, under different samples.
       The user can choose the regression errors standard deviation, regression linear coefficient and regression angular coefficient. Besides, 
       it is possible to select the number of observations in each sample and the number of simulations. The higher the number of simulations or the sample size,
       the more intensive the computations will be."),
