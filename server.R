@@ -27,7 +27,7 @@ shinyServer(
             reg1 <- lm(y ~ x);
             abline(reg1, col = 'red')
             
-            hist(errors, main = "Histogram of Residues \n(One of the Samples)", col = 'red', xlab = "Residues");    
+            hist(errors, main = "Histogram of Regression Residues \n(One of the Samples)", col = 'red', xlab = "Residues");    
         })
         
         output$hist1 <- renderPlot ({
